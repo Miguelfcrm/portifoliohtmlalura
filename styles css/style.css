@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --BACK__color: #060610;
+    --TEXT__color: #f6f6f6;
+    --STRONG__color: #22D4FD;
+    --BUTTON__color: #414243;
+    --TITLE__font: "Krona One", serif;
+    --TEXT__font:'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--BACK__color);
+    color: var(--TEXT__color);
+}
+
+.HDR {
+    /*padding: 10px(equivale a parte superior) 5px(equivale a direita) 10px(equivale a parte inferior) 5px(equivale a esquerda)*/
+    padding: 1% 0% 0% 15%;
+}
+
+.HDR__MENU {
+    display: flex;
+    gap: 8%;
+}
+
+.HDR__MENU__LINKS {
+    font-family: var(--TEXT__font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--STRONG__color);
+    text-decoration: none;
+}
+
+.APR {
+    padding: 3% 15% 3% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.TLT-STG {
+    color: var(--STRONG__color);
+}
+
+.APR__CONTENT {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.APR__CONTENT__TITLE {
+    font-family: var(--TITLE__font);
+    font-size: 2.25rem;
+}
+
+.APR__CONTENT__TEXT {
+    font-size: 1.5rem;
+    font-family: var(--TEXT__font);
+}
+
+.APR__BUTTONS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.APR__BUTTONS__SUBTITLE {
+    font-family:var(--TITLE__font);
+    font-weight: 25rem;
+    font-size: 1.5rem;
+
+}
+
+.APR__BUTTONS__APARENCE{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 0.13rem solid var(--STRONG__color);
+    width: 70%;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 4px 0;
+    text-decoration: none;
+    color: var(--STRONG__color);
+    font-family: var(--TEXT__font);
+}
+
+.APR__BUTTONS__APARENCE:hover{
+    background-color: var(--BUTTON__color);
+}
+
+.APR__img {
+    width: 50%;
+}
+
+.FTR {
+    background-color: var(--STRONG__color);
+    color: var(--BACK__color);
+    font-family: var(--TEXT__font);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 0;
+}
+
+@media (max-width: 1440px) {
+
+    .HDR{
+        padding: 10%;
+    }
+
+    .HDR__Menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    .APR{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .APR__CONTENT{
+        width: auto;
+    }
+
+}
